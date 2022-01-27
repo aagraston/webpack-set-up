@@ -1,9 +1,10 @@
 import dash from 'lodash';
+import myName from './myName';
 
 function component() {
   const element = document.createElement('div');
 
-  element.innerHTML = dash.join(['Hello', 'webpack'], ' ');
+  element.innerText = myName('Aaron');
 
   return element;
 }
